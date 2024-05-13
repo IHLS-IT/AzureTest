@@ -1,4 +1,5 @@
 const express = require('express');
+// const env = require('env');
 
 const app = express();
 
@@ -17,7 +18,7 @@ app.use('/any', (req, res) => {
     res.send('This is a test route for any.');
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
 console.log(`Server is running on port ${PORT}`);
