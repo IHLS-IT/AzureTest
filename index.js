@@ -17,6 +17,9 @@ res.send('This is a test route.');
 app.use('/any', (req, res) => {
     res.send('This is a test route for any.');
 });
+app.use('/uss', (req, res) => {
+    res.send('This is a test route for uss.');
+});
 
 const PORT = process.env.PORT;
 
